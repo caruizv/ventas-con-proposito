@@ -387,6 +387,44 @@ a { color: inherit; }
 .card-must { --card-accent: #5c282c; --accent: #8c5a5a; }
 .card-again { --card-accent: #b8944a; --accent: #786028; }
 .card-gifts { --card-accent: #5a3a30; --accent: #5a3a30; }
+.card-baby { --card-accent: #3F6B4A; --accent: #3F6B4A; }
+.card-toddler { --card-accent: #C4452A; --accent: #C4452A; }
+
+.theme-baby {
+  --bg: #eef4ea;
+  --accent: #3F6B4A;
+  --rule: #7a9a7a;
+  --badge: #3F6B4A;
+  --btn: #3F6B4A;
+  --disclosure-bg: rgba(63, 107, 74, 0.08);
+}
+.theme-baby .item:nth-child(1) { --tile: #3F6B4A; --mono: #f7f4ee; }
+.theme-baby .item:nth-child(2) { --tile: #C45C4A; --mono: #fff8f3; }
+.theme-baby .item:nth-child(3) { --tile: #F0C14B; --mono: #2c241c; }
+.theme-baby .item:nth-child(4) { --tile: #2E6B9A; --mono: #fff8f0; }
+.theme-baby .item:nth-child(5) { --tile: #7BB57A; --mono: #1e2a1e; }
+.theme-baby .item:nth-child(6) { --tile: #E8A0B0; --mono: #5a2438; }
+.theme-baby .item:nth-child(7) { --tile: #5AA8C8; --mono: #12384a; }
+.theme-baby .item:nth-child(8) { --tile: #7A4EA0; --mono: #fff8f0; }
+.theme-baby .item:nth-child(9) { --tile: #2E5A8A; --mono: #fff8f0; }
+
+.theme-toddler {
+  --bg: #f8ede8;
+  --accent: #C4452A;
+  --rule: #d08a78;
+  --badge: #C4452A;
+  --btn: #C4452A;
+  --disclosure-bg: rgba(196, 69, 42, 0.08);
+}
+.theme-toddler .item:nth-child(1) { --tile: #C4452A; --mono: #fff7f4; }
+.theme-toddler .item:nth-child(2) { --tile: #F0C14B; --mono: #2c241c; }
+.theme-toddler .item:nth-child(3) { --tile: #2E6B54; --mono: #f6fbf7; }
+.theme-toddler .item:nth-child(4) { --tile: #7BB57A; --mono: #1e2a1e; }
+.theme-toddler .item:nth-child(5) { --tile: #2E6B9A; --mono: #fff8f0; }
+.theme-toddler .item:nth-child(6) { --tile: #C4452A; --mono: #fff7f4; }
+.theme-toddler .item:nth-child(7) { --tile: #C48A52; --mono: #2c241c; }
+.theme-toddler .item:nth-child(8) { --tile: #E8A0B0; --mono: #5a2438; }
+.theme-toddler .item:nth-child(9) { --tile: #3E8A4A; --mono: #f6fbf7; }
 
 @media (min-width: 640px) {
   .item {
@@ -402,5 +440,5 @@ a { color: inherit; }
 @media (min-width: 880px) {
   .theme-index .wrap,
   .theme-index { --max: 64rem; }
-  .cards { grid-template-columns: repeat(3, 1fr); }
+  .cards { grid-template-columns: repeat(auto-fit, minmax(16.5rem, 1fr)); }
 }
